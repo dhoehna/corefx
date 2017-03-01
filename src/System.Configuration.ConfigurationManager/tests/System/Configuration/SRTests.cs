@@ -55,5 +55,14 @@ namespace System.Configuration
             Assert.Equal("Hello 22", SR.Format("Hello {0}", 22));
         }
 
+
+        [Fact]
+        public void Format_TwoObjects()
+        {
+            Assert.Equal("Hello 22 24", SR.Format("Hello {0} {1}", 22, 24));
+        }
+
+        
+
     }
 }
