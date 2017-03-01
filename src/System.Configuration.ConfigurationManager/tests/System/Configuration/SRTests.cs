@@ -62,7 +62,11 @@ namespace System.Configuration
             Assert.Equal("Hello 22 24", SR.Format("Hello {0} {1}", 22, 24));
         }
 
-        
+        [Fact]
+        public void Format_ThreeObjects()
+        {
+            Assert.Equal("YOLO I AM AWESOME", SR.Format("YOLO {0} {1} {2}", "I", "AM", "AWESOME"));
+        }
 
     }
 }
